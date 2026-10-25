@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>In Test Don Hang SPR02</title>
+  <style>
+    @media print {
+      @page {
+        margin: 0;
+        size: 80mm auto;
+      }
+      body {
+        margin: 0;
+        padding: 4px;
+      }
+      .no-print {
+        display: none;
+      }
+    }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      width: 76mm; /* Cố định chiều rộng vừa khổ K80 */
+      color: #000;
+      line-height: 1.3;
+      margin: 0 auto;
+    }
+    .text-center { text-align: center; }
+    .text-right { text-align: right; }
+    .bold { font-weight: bold; }
+    .line { border-top: 1px dashed #000; margin: 6px 0; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    td, th { padding: 3px 0; }
+  </style>
+</head>
+<body>
+
+  <div class="text-center">
+    <h3 style="margin: 0;">CỬA HÀNG TEST</h3>
+    <p style="margin: 2px 0;">Đ/c: Số 123 Đường ABC, Hà Nội</p>
+    <p style="margin: 2px 0;">SĐT: 0987.654.321</p>
+  </div>
+
+  <div class="line"></div>
+  <div class="text-center bold">PHIẾU IN TEST ĐƠN HÀNG</div>
+  <div>Mã đơn: <b>#TEST001</b></div>
+  <div>Thời gian: 26/10/2026 - 10:00</div>
+  <div class="line"></div>
+
+  <table>
+    <thead>
+      <tr>
+        <th align="left">Món</th>
+        <th align="center">SL</th>
+        <th align="right">T.Tiền</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Cà phê sữa đá</td>
+        <td align="center">2</td>
+        <td align="right">50.000</td>
+      </tr>
+      <tr>
+        <td>Trà đào cam sả</td>
+        <td align="center">1</td>
+        <td align="right">35.000</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="line"></div>
+
+  <div style="display: flex; justify-content: space-between;">
+    <span class="bold">Tổng tiền:</span>
+    <span class="bold">85.000 đ</span>
+  </div>
+
+  <div class="line"></div>
+  <div class="text-center" style="margin-top: 8px;">
+    <i>Cảm ơn và hẹn gặp lại!</i>
+  </div>
+
+  <div class="text-center no-print" style="margin-top: 20px;">
+    <button onclick="window.print()" style="padding: 8px 16px; cursor: pointer; font-size: 14px;">
+      Bấm vào đây để in test
+    </button>
+  </div>
+
+</body>
+</html>
